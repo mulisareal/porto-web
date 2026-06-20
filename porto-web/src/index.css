@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.paper-texture {
+  background-color: #02132e;
+  background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+  color: #f6f0e2;
+}
+
+.washi-tape {
+  background: rgba(185, 194, 204, 0.4);
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.doily-pattern {
+  -webkit-mask-image: radial-gradient(circle, transparent 50%, black 100%);
+  mask-image: radial-gradient(circle, transparent 50%, black 100%);
+  opacity: 0.1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(201, 162, 75, 0.3);
+}
+
+/* Garis timeline (Pengalaman) */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, #b9c2cc 10%, #b9c2cc 90%, transparent);
+}
+
+/* Kartu scrapbook (Pengalaman & Organisasi) */
+.scrapbook-card {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-out;
+}
+.scrapbook-card:hover {
+  transform: translateY(-4px) rotate(0.5deg);
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.8);
+}
